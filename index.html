@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Staffing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style_index_media.css">
+</head>
+<body>
+
+    <div class="header">
+        <img class="logo" src="images/logo left no bg.png">
+        <div class="navbar">
+            <a style="font-weight: bold;" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="enroll.html">Enroll</a>
+        </div>
+    </div>
+
+
+    <div class="mainText">
+        <h1>America's most <span class="word">trusted</span><br> staffing company.</h1>
+        <h2>At Storm Staffing, we pride ourselves on being the premier staffing solution for both job seekers and employers. 
+            Our dedicated team works tirelessly to match the right candidates with the right opportunities,
+            ensuring a perfect fit every time. <br> <br> Whether you're a candidate looking to advance your career or an employer 
+            seeking top-notch talent, Storm Staffing is here to support you every step of the way. 
+            Our extensive network and industry expertise allow us to provide personalized service and exceptional results. 
+            Trust Storm Staffing to help you navigate the job market and achieve your goals with confidence.</h2>
+        <button onclick="location.href='enroll.html'">Sign up now - its free!</button>
+    </div>
+    
+    <script>
+        const words = ["trusted", "productive", "reliable","efficient","innovative","dedicated","experienced","professional","skilled","popular","respected"];
+        let index = 0;
+        
+        function swapWord() {
+            index = (index + 1) % words.length;
+            const wordElement = document.querySelector(".word");
+    
+            wordElement.style.opacity = 0;
+            wordElement.style.transform = "translateY(-10px)";
+            
+            setTimeout(() => {
+                wordElement.textContent = words[index];
+                wordElement.style.opacity = 1;
+                wordElement.style.transform = "translateY(0)";
+            }, 500);
+        }
+        
+        setInterval(swapWord, 2000);
+    </script>
+
+
+
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <!-- Original Set -->
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c99501c_Discord.svg" alt="Discord">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fcd_NCR.svg" alt="NCR">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82b52566d454c994910_mondaycom.svg" alt="Monday.com">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fdb_Ted.svg" alt="Ted">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fba_Dropbox.svg" alt="Dropbox">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/6708139d2e30eb81beb54cc7_orangetheory-logo.svg" alt="Orangetheory">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fb6_Greenhouse.svg" alt="Greenhouse">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c995018_Vice.svg" alt="Vice">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c99502c_ideo-logo.svg" alt="Ideo">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fb1_Philips.svg" alt="Philips">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fd1_Mural.svg" alt="Mural">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995044_Name%3DABM%20Industries%2C%20Mode%3DLight.svg" alt="ABM Industries">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995028_TheNewYorkTimes.svg" alt="The New York Times">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82c52566d454c994f5e_Upwork.svg" alt="Upwork">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995054_Decathlon.svg" alt="Decathlon">
+
+            
+            <!-- Duplicate images for smooth infinite scrolling -->
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c99501c_Discord.svg" alt="Discord">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fcd_NCR.svg" alt="NCR">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82b52566d454c994910_mondaycom.svg" alt="Monday.com">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fdb_Ted.svg" alt="Ted">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fba_Dropbox.svg" alt="Dropbox">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/6708139d2e30eb81beb54cc7_orangetheory-logo.svg" alt="Orangetheory">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fb6_Greenhouse.svg" alt="Greenhouse">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c995018_Vice.svg" alt="Vice">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c99502c_ideo-logo.svg" alt="Ideo">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fb1_Philips.svg" alt="Philips">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82d52566d454c994fd1_Mural.svg" alt="Mural">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995044_Name%3DABM%20Industries%2C%20Mode%3DLight.svg" alt="ABM Industries">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995028_TheNewYorkTimes.svg" alt="The New York Times">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82c52566d454c994f5e_Upwork.svg" alt="Upwork">
+            <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995054_Decathlon.svg" alt="Decathlon">
+        </div>
+    </div>
+    <div class="empty div" style="height:0px"></div>
+    <div class="page_2"></div>
+
+</body>
+</html>

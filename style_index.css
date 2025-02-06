@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Google Sans Regular';
+    src: url('assets/ProductSans-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Google Sans Bold';
+    src: url('assets/ProductSans-Bold.ttf') format('woff');
+}
+
+.mainText{
+    font-family: 'Google Sans Bold';
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.mainText h1 {
+    font-size: 6vw;
+    margin: 5px;
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+.mainText button {
+    font-size: 30px;
+    background-color: #007BFF;
+    color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 40px;
+    font-family: 'Google Sans Bold';
+}
+
+.mainText button:hover {
+    cursor: pointer;
+    background-color: #0c498a;
+    border-color: white;
+
+}
+
+.word {
+    color: #007BFF;
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.mainText h2 {
+    padding-left: 40px;
+    width: 900px;
+    font-size: 25px;
+}
+
+/* Scrollbar */
+
+.scroll-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.scroll-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: max-content; /* Ensures content stretches infinitely */
+}
+
+.scroll-content img {
+    margin: 0 15px;
+    height: 50px;
+    width: auto;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* -------------------------------- */
+
+.page_2 {
+    height: 1000px;
+    background: black;
+    
+}
