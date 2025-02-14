@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Google Sans Regular';
-    src: url('assets/ProductSans-Regular.ttf') format('truetype');
+    src: url('assets/ProductSans-Regular.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Google Sans Bold';
-    src: url('assets/ProductSans-Bold.ttf') format('truetype');
+    src: url('assets/ProductSans-Bold.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'SF Display Regular';
-    src: url('assets/SF-Pro-Display-Light.otf') format('opentype');
+    src: url('assets/SF-Pro-Display-Light.otf') format('woff');
 }
 
 * {
