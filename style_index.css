@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Google Sans Regular';
-    src: url('assets/ProductSans-Regular.ttf') format('woff');
+    src: url('..assets/ProductSans-Regular.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Google Sans Bold';
-    src: url('assets/ProductSans-Bold.ttf') format('woff');
+    src: url('..assets/ProductSans-Bold.ttf') format('woff');
 }
 
 body {
