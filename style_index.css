@@ -53,6 +53,8 @@ body {
     padding-left: 40px;
     width: 900px;
     font-size: 25px;
+    font-family: 'Funnel Sans';
+    font-weight: 400;
 }
 
 /* Scrollbar 
@@ -113,15 +115,55 @@ body {
 /* -------------------------------- */
 
 .page_2 {
-    height: 1000px;
+    height: auto;
     background: white;
+    padding-bottom: 100px;
 }
 
 .page_2 h1 {
     font-family: 'Google Sans Bold';
-    font-size: 6vw;
+    font-size: 7vw;
     margin: 5px;
-    padding-top: 50px;
+    padding-top: 150px;
     margin-left: 40px;
     margin-right: 0px;
+}
+
+.pillars {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.pillar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Google Sans Bold';
+    font-size: 20px;
+    width: 21%;
+    margin-left: 20px; /* Add space between pillars */
+}
+
+.line {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.pillar h2 {
+    margin: 5px;
+    color: #007BFF;
+}
+
+.pillar p {
+    margin: 5px;
+    font-family: 'Funnel Sans';
+}
+
+.pillar img {
+    width: 50px;
+    height: auto;
 }
