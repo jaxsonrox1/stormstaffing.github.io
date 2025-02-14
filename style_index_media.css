@@ -60,4 +60,26 @@
         height: 30px;
     }
 
+    .page_2 h1 {
+        padding-top: 50px;
+        padding-left: 0px;
+        width: 90%;
+        text-align: center;
+        font-size: 10vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .pillars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pillar {
+        width: 90%;
+        margin-bottom: 10px; /* Add space between pillars */
+        margin-left: auto;
+    }
+
 }
