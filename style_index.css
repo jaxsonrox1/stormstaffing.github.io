@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Google Sans Regular';
-    src: url('..assets/ProductSans-Regular.ttf') format('woff');
+    src: url('../assets/ProductSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Google Sans Bold';
-    src: url('..assets/ProductSans-Bold.ttf') format('woff');
+    src: url('../assets/ProductSans-Bold.ttf') format('truetype');
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 .mainText{
-    font-family: 'Google Sans Bold';
+    font-family: 'Google Sans Bold', 'Inter';
     color: #ffffff;
     margin-top: 20px;
 }
@@ -33,7 +33,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin-left: 40px;
-    font-family: 'Google Sans Bold';
+    font-family: 'Google Sans Bold', 'Inter';
 }
 
 .mainText button:hover {
@@ -121,7 +121,7 @@ body {
 }
 
 .page_2 h1 {
-    font-family: 'Google Sans Bold';
+    font-family: 'Google Sans Bold', 'Inter';
     font-size: 7vw;
     margin: 5px;
     padding-top: 150px;
@@ -142,7 +142,7 @@ body {
     padding: 20px;
     color: black;
     border-radius: 10px;
-    font-family: 'Google Sans Bold';
+    font-family: 'Google Sans Bold', 'Inter';
     font-size: 20px;
     width: 21%;
     margin-left: 20px; /* Add space between pillars */
