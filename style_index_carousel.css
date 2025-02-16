@@ -17,7 +17,7 @@
     max-width: 1200px;
     position: relative;
     border-radius: 12px;
-    overflow: hidden; /* Added overflow: hidden here */
+    overflow-x: visible;
 }
 
 .carousel {
