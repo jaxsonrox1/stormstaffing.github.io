@@ -38,7 +38,7 @@
         padding-left: 0px;
         width: 90%;
         text-align: center;
-        font-size: 5vw;
+        font-size: 4.5vw;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -48,8 +48,8 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 80%;
-        font-size: 6vw;
+        padding: 20px;
+        font-size: 5vw;
     }
 
     .scroll-container {
@@ -65,7 +65,7 @@
         padding-left: 0px;
         width: 90%;
         text-align: center;
-        font-size: 10vw;
+        font-size: 13vw;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -81,5 +81,89 @@
         margin-bottom: 10px; /* Add space between pillars */
         margin-left: auto;
     }
+
+    /* -----------Page 3--------------- */
+
+    .page_3 h1 {
+        padding-top: 50px;
+        padding-left: 0px;
+        width: 90%;
+        text-align: center;
+        font-size: 11vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .page_3 p {
+        padding-left: 0px;
+        width: 90%;
+        text-align: center;
+        font-size: 7vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .page-3-break {
+        display: block;
+    }
+
+    .page-3-number {
+        font-size: 10vw;
+    }
+
+     /* -----------Page 4--------------- */
+
+     .page_4 h2 {
+        padding-top: 50px;
+        padding-left: 0px;
+        width: 90%;
+        text-align: center;
+        font-size: 9vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+     }
+
+     .left-side {
+        display: block;
+     }
+
+     .page_4 h1 {
+        padding-top: 50px;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 11vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+     }
+
+     .page_4 button {
+        padding: 20px;
+        font-size: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+     }
+
+     .right-side {
+        display: block;
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        padding-left: 10px;
+        margin-right: auto;
+        padding-top: 40px;
+     }
+
+     .footer {
+        margin-top: 30px !important;
+        padding-bottom: 90px !important;
+     }
 
 }
