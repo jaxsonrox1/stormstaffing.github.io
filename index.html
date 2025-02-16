@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_index.css">
     <link rel="stylesheet" href="style_index_media.css">
+    <link rel="stylesheet" href="style_index_carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -15,7 +16,8 @@
 <body>
 
     <div class="header">
-        <img class="logo" src="images/logo left no bg.png">
+        <div class="container">
+        <img class="logo" src="images/logo left no bg.png"></div>
         <div class="navbar">
             <a style="font-weight: bold;" href="index.html">Home</a>
             <a href="contact.html">Contact</a>
@@ -26,18 +28,20 @@
 
 
     <div class="mainText">
-        <h1>America's most <span class="word">trusted</span><br> staffing company.</h1>
-        <h2>At Storm Staffing, we pride ourselves on being the premier staffing solution for both job seekers and employers. 
-            Our dedicated team works tirelessly to match the right candidates with the right opportunities,
-            ensuring a perfect fit every time. <br> <br> Whether you're a candidate looking to advance your career or an employer 
-            seeking top-notch talent, Storm Staffing is here to support you every step of the way. 
-            Our extensive network and industry expertise allow us to provide personalized service and exceptional results. 
-            Trust Storm Staffing to help you navigate the job market and achieve your goals with confidence.</h2>
-        <button onclick="location.href='enroll.html'">Sign up now - its free!</button>
+        <div class="container">
+            <h1>America's most <span class="word">trusted</span><br> staffing company.</h1>
+            <h2>At Storm Staffing, we pride ourselves on being the premier staffing solution for both job seekers and employers. 
+                Our dedicated team works tirelessly to match the right candidates with the right opportunities,
+                ensuring a perfect fit every time. <br> <br> Whether you're a candidate looking to advance your career or an employer 
+                seeking top-notch talent, Storm Staffing is here to support you every step of the way. 
+                Our extensive network and industry expertise allow us to provide personalized service and exceptional results. 
+                Trust Storm Staffing to help you navigate the job market and achieve your goals with confidence.</h2>
+            <button onclick="location.href='enroll.html'">Sign up now - its free!</button>
+        </div>
     </div>
     
     <script>
-        const words = ["trusted", "productive", "reliable","efficient","innovative","dedicated","experienced","professional","skilled","popular","respected"];
+        const words = ["trusted", "productive", "reliable","efficient","innovative","dedicated","skilled","popular"];
         let index = 0;
         
         function swapWord() {
@@ -97,41 +101,346 @@
             <img src="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66e8a82e52566d454c995054_Decathlon.svg" alt="Decathlon">
         </div>
     </div>
-    <div class="empty div" style="height:0px"></div>
     <div class="page_2">
-        <h1>A better way <br>to <span class="word">staff</span>.</h1>
+        <div class="container">
+            <h1>A better way <br>to <span class="word">staff</span>.</h1>
 
-        <div class="pillars">
-            <div class="pillar">
-                <hr class="line">
-                <img src="images/quality.png">
-                <h2>Quality</h2>
-                <p>Our team is dedicated to providing the highest quality service to both job seekers and employers. 
-                    We take the time to understand your unique needs and goals, ensuring a perfect match every time.</p>
-            </div>
-            <div class="pillar">
-                <hr class="line">
-                <img src="images/efficiency.png">
-                <h2>Efficiency</h2>
-                <p>With our extensive network and industry expertise, we are able to streamline the hiring process and 
-                    connect top talent with top opportunities quickly.</p>
-            </div>
-            <div class="pillar">
-                <hr class="line">
-                <img src="images/reliability.png">
-                <h2>Reliability</h2>
-                <p>At Storm Staffing, we pride ourselves on being a reliable partner you can trust. 
-                    Our team is committed to delivering exceptional results and providing personalized service every step of the way.</p>
-            </div>
-            <div class="pillar">
-                <hr class="line">
-                <img src="images/innovation.png">
-                <h2>Innovation</h2>
-                <p>We continuously strive to innovate and improve our services to better meet the needs of our clients and candidates. 
-                    Our forward-thinking approach ensures that we stay ahead of industry trends and provide cutting-edge solutions.</p>
+            <div class="pillars">
+                <div class="pillar">
+                    <hr class="line">
+                    <img src="images/quality.png">
+                    <h2>Quality</h2>
+                    <p>Our team is dedicated to providing the highest quality service to both job seekers and employers. 
+                        We take the time to understand your unique needs and goals, ensuring a perfect match every time.</p>
+                </div>
+                <div class="pillar">
+                    <hr class="line">
+                    <img src="images/efficiency.png">
+                    <h2>Efficiency</h2>
+                    <p>With our extensive network and industry expertise, we are able to streamline the hiring process and 
+                        connect top talent with top opportunities quickly.</p>
+                </div>
+                <div class="pillar">
+                    <hr class="line">
+                    <img src="images/reliability.png">
+                    <h2>Reliability</h2>
+                    <p>At Storm Staffing, we pride ourselves on being a reliable partner you can trust. 
+                        Our team is committed to delivering exceptional results and providing personalized service every step of the way.</p>
+                </div>
+                <div class="pillar">
+                    <hr class="line">
+                    <img src="images/innovation.png">
+                    <h2>Innovation</h2>
+                    <p>We continuously strive to innovate and improve our services to better meet the needs of our clients and candidates. 
+                        Our forward-thinking approach ensures that we stay ahead of industry trends and provide cutting-edge solutions.</p>
+                </div>
             </div>
         </div>
+    </div>  
+
+    <div class="page_3">
+        <h1>Powering teams <br>with <span class="word">top talent</span>.</h1>
+        <p id="match-rate"><span class="page-3-number">0%</span><br class="page-3-break"> match rates</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const matchRateElement = document.getElementById("match-rate");
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            let start = 0;
+            const end = 98;
+            const duration = 2000; // 2 seconds
+            const increment = end / (duration / 10);
+
+            const updateMatchRate = () => {
+            start += increment;
+            if (start >= end) {
+            matchRateElement.innerHTML = `<span class="page-3-number">${end}%</span><br class="page-3-break"> match rates`;
+            clearInterval(interval);
+            } else {
+            matchRateElement.innerHTML = `<span class="page-3-number">${Math.floor(start)}%</span><br class="page-3-break"> match rates`;
+            }
+            };
+
+            const interval = setInterval(updateMatchRate, 10);
+            observer.unobserve(matchRateElement); // Stop observing after first intersection
+            }
+            });
+            });
+
+            observer.observe(matchRateElement);
+            });
+        </script>
+        <p id="placements"><span class="page-3-number">5000+</span><br class="page-3-break"> placements</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const matchRateElement = document.getElementById("placements");
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            let start = 0;
+            const end = 5000;
+            const duration = 2000; // 2 seconds
+            const increment = end / (duration / 10);
+
+            const updateMatchRate = () => {
+            start += increment;
+            if (start >= end) {
+            matchRateElement.innerHTML = `<span class="page-3-number">${end}+</span><br class="page-3-break"> placements`;
+            clearInterval(interval);
+            } else {
+            matchRateElement.innerHTML = `<span class="page-3-number">${Math.floor(start)}+</span><br class="page-3-break"> placements`;
+            }
+            };
+
+            const interval = setInterval(updateMatchRate, 10);
+            observer.unobserve(matchRateElement); // Stop observing after first intersection
+            }
+            });
+            });
+
+            observer.observe(matchRateElement);
+            });
+        </script>
+        <p id="experience"><span class="page-3-number">10+</span><br class="page-3-break"> years of experience</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const matchRateElement = document.getElementById("experience");
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            let start = 0;
+            const end = 10;
+            const duration = 2000; // 2 seconds
+            const increment = end / (duration / 10);
+
+            const updateMatchRate = () => {
+            start += increment;
+            if (start >= end) {
+            matchRateElement.innerHTML = `<span class="page-3-number">${end}+</span><br class="page-3-break"> years of experience`;
+            clearInterval(interval);
+            } else {
+            matchRateElement.innerHTML = `<span class="page-3-number">${Math.floor(start)}+</span><br class="page-3-break"> years of experience`;
+            }
+            };
+
+            const interval = setInterval(updateMatchRate, 10);
+            observer.unobserve(matchRateElement); // Stop observing after first intersection
+            }
+            });
+            });
+
+            observer.observe(matchRateElement);
+            });
+        </script>
+        <p id="ratings"><span class="page-3-number">4.9/5</span><br class="page-3-break"> customer satisfaction</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const matchRateElement = document.getElementById("ratings");
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            let start = 0;
+            const end = 4.9;
+            const duration = 2000; // 2 seconds
+            const increment = 0.1;
+
+            const updateMatchRate = () => {
+            start += increment;
+            if (start >= end) {
+            matchRateElement.innerHTML = `<span class="page-3-number">${end}/5</span><br class="page-3-break"> customer satisfaction`;
+            clearInterval(interval);
+            } else {
+            matchRateElement.innerHTML = `<span class="page-3-number">${start.toFixed(1)}/5</span><br class="page-3-break"> customer satisfaction`;
+            }
+            };
+
+            const interval = setInterval(updateMatchRate, duration / ((end - start) / increment));
+            observer.unobserve(matchRateElement); // Stop observing after first intersection
+            }
+            });
+            });
+
+            observer.observe(matchRateElement);
+            });
+        </script>
+        <p id="trust"><span class="page-3-number">300+</span><br class="page-3-break"> companies rely on us</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const matchRateElement = document.getElementById("trust");
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            let start = 0;
+            const end = 300;
+            const duration = 2000; // 2 seconds
+            const increment = end / (duration / 10);
+
+            const updateMatchRate = () => {
+            start += increment;
+            if (start >= end) {
+            matchRateElement.innerHTML = `<span class="page-3-number">${end}+</span><br class="page-3-break"> companies rely on us`;
+            clearInterval(interval);
+            } else {
+            matchRateElement.innerHTML = `<span class="page-3-number">${Math.floor(start)}+</span><br class="page-3-break"> companies rely on us`;
+            }
+            };
+
+            const interval = setInterval(updateMatchRate, 10);
+            observer.unobserve(matchRateElement); // Stop observing after first intersection
+            }
+            });
+            });
+
+            observer.observe(matchRateElement);
+            });
+        </script>
     </div>
+
+    <div class="page_4">
+        <h2>Don't believe us? <br class="page-3-break">Look at what our customers have to say:</h2>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Testimonials will be dynamically added here -->
+            </div>
+            <button class="nav-button prev">&#8249;</button>
+            <button class="nav-button next">&#8250;</button>
+        </div>
+    
+        <script>
+            const carousel = document.querySelector('.carousel');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+
+            const testimonials = [
+                {
+                    name: "Sarah J.",
+                    image: "woman.jpeg",
+                    text: "Storm Staffing helped me find my dream job quickly. Their team truly cares about their clients."
+                },
+                {
+                    name: "Benjamin Heinemann",
+                    image: "man 2.jpeg",
+                    text: "The service provided by Storm Staffing is exceptional. They matched me with a great company that fits my skills perfectly."
+                },
+                {
+                    name: "Menachem Kramer",
+                    image: "man 3.jpeg",
+                    text: "I highly recommend Storm Staffing. Their dedication and expertise made my job search stress-free and successful."
+                },
+                {
+                    name: "Jacob Smith",
+                    image: "man 4.jpeg",
+                    text: "Thanks to Storm Staffing, I advanced my career. Their team is knowledgeable and supportive."
+                },
+                {
+                    name: "Charlie Davis",
+                    image: "man 1.jpeg",
+                    text: "Storm Staffing exceeded my expectations. They found me a fantastic job opportunity and provided excellent support."
+                }
+            ];
+
+            let currentIndex = 0;
+
+            function createTestimonialElement(testimonial, index) {
+                const div = document.createElement('div');
+                div.className = 'testimonial';
+                div.innerHTML = `
+                    <img src="images/${testimonial.image}" alt="${testimonial.name}">
+                    <h3>${testimonial.name}</h3>
+                    <p>${testimonial.text}</p>
+                `;
+                return div;
+            }
+
+            function updateCarousel() {
+                carousel.innerHTML = '';
+                const isMobile = window.innerWidth < 768;
+
+                if (isMobile) {
+                    carousel.appendChild(createTestimonialElement(testimonials[currentIndex], currentIndex));
+                } else {
+                    const prevIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+                    const nextIndex = (currentIndex + 1) % testimonials.length;
+
+                    carousel.appendChild(createTestimonialElement(testimonials[prevIndex], prevIndex));
+                    const activeTestimonial = createTestimonialElement(testimonials[currentIndex], currentIndex);
+                    activeTestimonial.classList.add('active');
+                    carousel.appendChild(activeTestimonial);
+                    carousel.appendChild(createTestimonialElement(testimonials[nextIndex], nextIndex));
+                }
+            }
+
+            function showNext() {
+                currentIndex = (currentIndex + 1) % testimonials.length;
+                updateCarousel();
+            }
+
+            function showPrev() {
+                currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+                updateCarousel();
+            }
+
+            nextBtn.addEventListener('click', showNext);
+            prevBtn.addEventListener('click', showPrev);
+
+            // Responsive behavior
+            function handleResize() {
+                updateCarousel();
+            }
+
+            window.addEventListener('resize', handleResize);
+
+            // Initial setup
+            updateCarousel();
+
+            // Auto-scroll (optional)
+            // setInterval(showNext, 5000);
+
+        </script>
+
+        <div class="left-side">
+            <h1>Get started <br>now for <span class="word">free</span>.</h1>
+
+            <button class="page-4-button" onclick="location.href='enroll.html'">Sign up now - its free!</button>
+        </div>
+        <div class="right-side">
+            <h3>Try <span class="word">Storm Staffing</span> with no upfront costs. Hire top talent and only pay 10% of the salary upon placement.</h3>
+            <hr>
+            <h4>For Employers</h4>
+            <p>Need staffing solutions tailored to your business? Get in touch for a free consultation.</p>
+            <a href='contact.html'>Contact us</a>
+            <hr>
+            <h4>For Job Seekers</h4>
+            <p>Ready to take the next step in your career? Let us connect you with top companies.</p>
+            <a href='jobs.html'>Find jobs</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Website by YH Studios</p>
+    </div>
+
+    <script>
+        function setPaddingFromHeight(sourceSelector1, sourceSelector2, targetSelector) {
+            const sourceElement1 = document.querySelector(sourceSelector1);
+            const sourceElement2 = document.querySelector(sourceSelector2);
+            const targetElement = document.querySelector(targetSelector);
+
+            if (sourceElement1 && sourceElement2 && targetElement) {
+                const height1 = sourceElement1.offsetHeight;
+                const height2 = sourceElement2.offsetHeight;
+                const newPadding = Math.max(0, height1 - height2) + 40; // Adds 20px of margin
+                targetElement.style.marginTop = `${newPadding}px`;
+            }
+        }
+
+        // Run on page load
+        window.addEventListener("load", () => {
+            setPaddingFromHeight(".right-side", ".left-side", ".footer");
+        });
+    </script>
 
 </body>
 </html>
