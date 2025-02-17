@@ -31,7 +31,7 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    margin: 0 10px; /* Used to be margin: 0 10px; here */
+    margin: 0; /* Used to be margin: 0 10px; here */
     transition: all 0.3s ease;
 }
 
