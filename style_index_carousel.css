@@ -17,7 +17,7 @@
     max-width: 1200px;
     position: relative;
     border-radius: 12px;
-    overflow-x: visible;
+    overflow: hidden; /* Added overflow: hidden here */
 }
 
 .carousel {
@@ -31,7 +31,7 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    margin: 0 10px;
+    margin: 0 10px; /* Used to be margin: 0 10px; here */
     transition: all 0.3s ease;
 }
 
@@ -86,7 +86,7 @@
 @media (max-width: 767px) {
     .nav-button {
         position: absolute;
-        top: 10px;
+        top: 0;  /* 50% prev */
         background-color: transparent !important;
         border: none;
         font-size: 24px;
