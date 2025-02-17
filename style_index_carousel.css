@@ -86,7 +86,7 @@
 @media (max-width: 767px) {
     .nav-button {
         position: absolute;
-        top: 0;  /* 50% prev */
+        top: 100px;  /* 50% prev */
         background-color: transparent !important;
         border: none;
         font-size: 24px;
