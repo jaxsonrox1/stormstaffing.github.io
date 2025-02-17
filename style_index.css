@@ -29,8 +29,13 @@ body {
     margin-right: auto;
 }
 */
+
+h1 {
+    font-family: 'Google Sans Bold';
+}
+
 .mainText{
-    font-family: 'Google Sans Regular', 'Inter';
+    font-family: 'Google Sans Bold', 'Inter';
     color: #ffffff;
     margin-top: 20px;
 }
