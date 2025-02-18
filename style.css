@@ -26,6 +26,10 @@ body {
     background: radial-gradient(circle, rgba(22,115,120,1) 0%, rgba(82,126,179,1) 51%, rgba(31,58,88,1) 100%);*/
 }
 
+h1 {
+    font-weight: 500;
+}
+
 .header {
     /*background: linear-gradient(to right, #167378, #1f3a58);*/
     padding: 10px;
